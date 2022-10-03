@@ -22,8 +22,8 @@ Read this https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics
 Simple hook model
 <br>
 <br>
-F_hook = -kr (r<L),
-          0 (r>L)
+
+    F_hook = -kr (r<L),0 (r>L)
           
 ![clipboard_ec0f0ded0ebd2efc9b1c0709dde67efab](https://user-images.githubusercontent.com/60418809/193487469-6a1c5375-ba23-45e5-ac4b-66cc6c67843b.png)
 <br>
