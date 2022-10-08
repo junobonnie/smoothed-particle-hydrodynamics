@@ -7,7 +7,7 @@ link: https://github.com/junobonnie/vectortools-and-atom
 <br>
 <br>
     
-## What is SPH?: 
+## What is SPH?
 
 <br>
 
@@ -17,7 +17,7 @@ Read this https://en.wikipedia.org/wiki/Smoothed-particle_hydrodynamics
 <br>
 <br>
 
-## Surface tension?:
+## Surface tension?
 <br>
 Simple hook model
 <br>
