@@ -50,11 +50,9 @@ class Simulator(Simulator):
             result = 0
             for other in self.world.atoms:
                 r = atom.pos - other.pos
-                if not atom == other and r.dot(r) < L**2:# and r.dot(r) > self.element.radius+other.element.radius:
-                    result += (15*atom.element.mass/(3.14*L**6))*((L - abs(r))**3) #-other.element.mass/r.dot(r)*(r/abs(r))
+                if r.dot(r) < L**2:
+                    result += (15*atom.element.mass/(3.14*L**6))*((L - abs(r))**3)
             atom.rho = result
-            #print('============')
-            #print(atom.rho)
 
     def set_pressure(self):
         for atom in self.world.atoms:
@@ -65,10 +63,8 @@ class Simulator(Simulator):
         result = Vector(0, 0) 
         for other in self.world.atoms:
             r = atom.pos - other.pos
-            if not atom == other and r.dot(r) < L**2: # and r.dot(r) > atom.element.radius+other.element.radius:
-                #print(other.rho)
-                result += (45/(3.14*L**6))*(r/(abs(r)+0.01))*((atom.p + other.p)/(2*other.rho+0.002))*((L-abs(r))**2) #-other.element.mass/r.dot(r)*(r/abs(r))
-                #print(result)
+            if not atom == other and r.dot(r) < L**2:
+                result += (45/(3.14*L**6))*(r/(abs(r)+0.01))*((atom.p + other.p)/(2*other.rho+0.002))*((L-abs(r))**2)
         return result
     #Pᵢ = (− (45 M) / (π L⁶)) ∑ⱼ − (xⱼ − xᵢ) / (dᵢⱼ) (pⱼ + pᵢ) / (2 ρⱼ) (L − dᵢⱼ)² 
 
