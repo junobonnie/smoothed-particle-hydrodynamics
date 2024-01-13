@@ -96,3 +96,17 @@ It's simple and make sense.
 
   - 200 particles
   ![200](https://user-images.githubusercontent.com/60418809/193504872-0e5ef3a7-6e7d-43ef-a5c1-620b8755e371.gif)
+
+
+
+  ### Dam Break Simulation
+
+  My simulation
+  <br>
+
+
+  - 2k particles
+
+https://github.com/junobonnie/smoothed-particle-hydrodynamics/assets/60418809/e6a4d69e-a4a8-4f11-b572-78607fcf8eb8
+
+
